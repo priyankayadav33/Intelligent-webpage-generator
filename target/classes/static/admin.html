@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <input type="password" id="adminPassword" placeholder="Enter admin password">
+    <button onclick="validatePassword()">Login</button>
+
+    <div id="adminPanel" style="display:none;">
+        <h2>Welcome, Admin</h2>
+        <button onclick="loadTemplates()">Load Templates</button>
+        <div id="template-list"></div>
+    </div>
+
+    <!-- Link external JS (✅ correct relative path) -->
+    <script src="/js/admin.js"></script>
+</body>
+</html>
